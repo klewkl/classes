@@ -22,10 +22,10 @@ class CountVectorizer:
 
 
   def fit_transform (self, text): 
-    """ One-hot Enconding для векторизации каждого слова из мешка слов """
+    """ One-hot кодирование для подсчета числа вхождений слова в строку """
 
     words= defaultdict(int)
-    #всем словам из self.feature_names_out задаваю значние 0 
+    #всем словам из self.feature_names_out задаю значние 0 
     for word in self.feature_names_out: 
         words[word] = 0   
     
