@@ -4,10 +4,9 @@ from collections import defaultdict
 class CountVectorizer: 
   """ Класс для преобразования текстовых данных """ 
   
-  def __init___(self,feature_names_out,fit_transform): 
+  def __init___(self,feature_names_out): 
     self.feature_names_out  = feature_names_out
-    self.fit_transform = fit_transform
-  
+    
 
   def get_feature_names_out(self, corpus): 
     """ Токенизация текста,приведение слов к нижнему регистру """ 
