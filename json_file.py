@@ -1,6 +1,5 @@
 import json
 
-
 nearest_station_adv = """{
   "title": "iPhone X",
   "price": 100,
@@ -9,7 +8,6 @@ nearest_station_adv = """{
     "metro_stations": ["Спортивная", "Гагаринская"]
   }
 }"""
-
 
 dog_category_ad = """ {
   "title": "Вельш-корги",
