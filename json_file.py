@@ -16,7 +16,7 @@ dog_category_ad = """ {
   "location": {
     "address": "сельское поселение Ельдигинское, поселок санатория Тишково, 25"
   }
-}""" 
+}"""
 
 iphone_ad = json.loads(nearest_station_adv)
 category_ad = json.loads(dog_category_ad)
@@ -28,12 +28,12 @@ class ColorizeMixin():
    Меняет цвет текста при выводе на консоль
   """
   
-    def __init__(self, code):
-      self.code = code
-      print(f'\033[1;{self.code};40m')
+  def __init__(self, code):
+    self.code = code
+    print(f'\033[1;{self.code};40m')
 
 
-class Advert(ColorizeMixin): 
+class Advert(ColorizeMixin):
   
   """
    Класс, который динамически создает атрибуты экземпляра
