@@ -23,20 +23,22 @@ category_ad = json.loads(dog_category_ad)
 
 
 class ColorizeMixin():
-
-    """
-    Меняет цвет текста при выводе на консоль
-    """
+  
+  """
+   Меняет цвет текста при выводе на консоль
+  """
+  
     def __init__(self, code):
       self.code = code
       print(f'\033[1;{self.code};40m')
 
 
 class Advert(ColorizeMixin): 
-
-    """
-    Класс, который динамически создает атрибуты экземпляра класса из атрибутов JSON объекта 
-    """
+  
+  """
+   Класс, который динамически создает атрибуты экземпляра
+   класса из атрибутов JSON объекта 
+  """
 
   repr_color_code = 32
   color = ColorizeMixin(repr_color_code)
@@ -57,3 +59,9 @@ class Advert(ColorizeMixin):
 
   def __repr__(self):
     return f'{self.title} | {self.price} ₽'
+
+# add_phone = Advert(iphone_ad)
+# add_phone.title, add_phone.price, add_phone.location.address
+
+# add_dog = Advert(category_ad)
+# add_dog, add_dog.title, add_dog.price, add_dog.location.address
