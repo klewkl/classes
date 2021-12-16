@@ -95,7 +95,7 @@ class TfIdfVectorizer(CountVectorizer):
 
     def fit_transform(self, text):
         count_matrix = super().fit_transform(text)
-        return self.transformer.fit_transform(count_matrix)
+        return self.transformer.fit_transform(matrix)
 
 
 corpus = [
