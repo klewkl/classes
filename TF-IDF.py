@@ -63,6 +63,7 @@ class TfIdfTransformer:
 
     return tf_matrix
 
+
   def idf_func(self, matrix): 
     num_docs = len(self.bag_of_words)
     idf_matrix = []
@@ -82,8 +83,7 @@ class TfIdfTransformer:
     result_matrix = []
     for snt in tf:
       for elem in snt: 
-        for num in idf: 
-          result_matrix.append(elem * num)
+        result_matrix.append([round(a*b, 3) for a, b in zip(line, idf)])
     
     return result_matrix
 
