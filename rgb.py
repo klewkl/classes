@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 
-
 class ComputerColor(ABC):
 
     @abstractmethod
@@ -84,18 +83,13 @@ def print_a(color: ComputerColor):
 
 
 if __name__ == '__main__':
-
     red = Color(255, 0, 0)
     print(red)
-
     green = Color(0, 255, 0)
     print(green)
-
     red2 = Color(255, 0, 0)
     print(red2)
-
     print(red + green)
-
     orange1 = Color(255, 165, 0)
     orange2 = Color(255, 165, 0)
     color_list = [orange1, red, green, orange2]
