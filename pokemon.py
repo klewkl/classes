@@ -1,7 +1,6 @@
 import abc
 import random
 
-
 class AnimeMon(abc.ABC):
     @property
     @abc.abstractmethod
